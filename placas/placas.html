@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validador de Placas</title>
+    <link rel="stylesheet" href="placas.css"> 
+    <script src="serviciosPlacas.js"></script>
+    <script src="placas.js"></script>
+    <script src="utilitariosCadenas.js"></script>
+</head>
+<body>
+
+    <div id="main-container">
+
+        <h1>Validador de Placas de Ecuador 🇪🇨</h1>
+
+        <div id="input-section">
+            <label for="txtPlaca">Ingresa la Placa:</label>
+            <input type="text" id="txtPlaca" maxlength="8" placeholder="Ej: PBT-1234">
+            
+            <div id="buttons-container">
+                <button onclick="validarPlaca()">Validar Placa</button>
+                <button onclick="limpiar()">Limpiar</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Resultados</h2>
+
+        <div id="validation-message">
+            <p id="mensajeValidacion" style="font-weight: bold;"></p>
+        </div>
+
+        <div id="results-details">
+            <span id="infoProvincia"></span><br>
+            <span id="infoTipo"></span><br>
+            <span id="infoDia"></span>
+        </div>
+
+        <hr>
+
+    </div> 
+
+
+</body>
+</html>
