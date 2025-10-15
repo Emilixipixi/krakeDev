@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #4a4a4a;
+    border-bottom: 3px solid #6c757d;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #007bff;
+    margin-top: 25px;
+}
+
+/* Contenedor principal de los jugadores */
+.players-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+/* Estilos de cada sección de jugador */
+.player-section {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Estilos de los botones de elección */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para el texto de la elección y la imagen */
+p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+#lblJ1, #lblJ2 {
+    font-weight: bold;
+    color: #dc3545;
+}
+
+img {
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* Asegura que la imagen sea del tamaño especificado en HTML */
+    max-width: 150px; 
+    height: auto;
+}
+
+/* Estilos para el área de resultado */
+#lblGanador {
+    font-size: 24px;
+    font-weight: 900;
+    color: #ffc107; /* Amarillo para destacar */
+    background-color: #343a40;
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
