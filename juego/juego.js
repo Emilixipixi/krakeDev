@@ -35,4 +35,4 @@ limpiar=function(){
     puntosComputador=0
      mostrarTexto("puntosUsuario",puntosUsuario);
       mostrarTexto("puntosComputador",puntosComputador);
-}
+} 
