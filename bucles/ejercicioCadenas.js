@@ -38,3 +38,34 @@ invertirCadena = function(cadena) {
     }
     mostrarTexto("lblResultado",resultado);
 }
+
+buscarLetra=function(cadena,letra){
+    let letraIterada;
+    let existeLetra=false
+    for(let i=0;i<cadena.length;i++){
+        letraIterada=cadena.charAt(i);
+        if(letraIterada==letra){
+            existeLetra=true;
+
+        }
+
+    }
+    if (existeLetra==true){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+contarMayusculas =function(cadena){
+    let letra;
+    let contadorMayusculas;
+    for (let i=0;i<cadena.length;i++){
+        letra=cadena.charAt(i);
+        esMayuscula(letra);
+        if(esMayuscula(letra)){
+            contadorMayusculas=contadorMayusculas+1;
+        }
+    }
+    console.log(contadorMayusculas);
+}
