@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="ahorcado.css">
+    <script src="ahorcado.js"></script>
+    <title>Juego del Ahorcado</title>
+</head>
+<body>
+    <div class="containerMain">
+
+        <div class="containerLefth">
+            <h3>JUEGO DEL AHORACADO</h3>
+            <div>Ingresa una palabra de 5 letras</div>
+            <input type="password" id="txtSecreta" />
+            <input type="button" onclick="guardarPalabra();" value="GUARDAR"/>
+
+            <div>Ingresa una letra:</div>
+            <input type="text" id="txtLetra">
+            <input type="button" id="btnValidar" onclick="ingresarLetra();" value="VALIDAR"/>
+            <br/>
+
+            <div id="letras" style="display: flex; justify-content: space-between; width: 250px;">
+                <div id="div0"></div>
+                <div id="div1"></div>
+                <div id="div2"></div>
+                <div id="div3"></div>
+                <div id="div4"></div>
+            </div>
+            
+            <img id="ahorcadoImagen" src="imagenes/ahorcado_01.png" alt="Imagen del ahorcado, estado 0 errores" />
+            
+        </div>
+        
+        <div class="containerRigth">
+            <img src="./fondo.jpg" width="100%" />
+            <img src="./krakeLogo.png" class="imgLogo" width="100%" />
+        </div>
+    </div>
+</body>
+</html>
