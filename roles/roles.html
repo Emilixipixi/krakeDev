@@ -7,7 +7,7 @@
     <script src="utilitarios.js"></script>
 </head>
 
-<body onload="mostrarOpcionRol()">
+<body onload="mostrarOpcionEmpleado()">
     <div class="menu">
         <div class="contenedorBoton">
             <input type="button" value="EMPLEADO" class="estiloBoton" onclick="mostrarOpcionEmpleado()" />
@@ -169,7 +169,7 @@
                 </div>
                 <div class="botones">
                     <div class="contenedorBoton">
-                        <input type="button" value="GUARDAR" class="estiloBoton" />
+                        <input type="button" value="GUARDAR" class="estiloBoton" id="btnGuardarRol" onclick="guardarRol()" />
                     </div>
                 </div>
             </div>
@@ -210,6 +210,14 @@
                     </div>
                     <div>
                         <div class="info" id="infoAporteEmpleado">0.0</div>
+                    </div>
+                </div>
+                <div class="ingresoDatos">
+                    <div class="tituloCampo">
+                        TOTAL NÓMINA
+                    </div>
+                    <div>
+                        <div class="info" id="infoTotalNomina">0.0</div>
                     </div>
                 </div>
             </div>
